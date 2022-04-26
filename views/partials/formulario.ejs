@@ -1,0 +1,50 @@
+<div class="p-3 mb-2 bg-info text-white">
+<h1>Ingreso del producto</h1>
+<div class="container-fluid">
+        <form onsubmit="return addProducto(this)" >
+
+                <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre del producto</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                        <label for="precio" class="form-label">Precio del producto</label>
+                        <input type="number" name="precio" id="precio" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                        <label for="url" class="form-label">Link del producto</label>
+                        <input type="text" name="url" id="url" class="form-control">  
+                </div>
+
+                <button class="btn btn-primary" type="submit" value="Listo">Listo!</button>
+        </form>
+      
+</div>
+<div class="jumbotron">
+        <h1>Listado de productos</h1>
+        <table class="table table-info table-striped" >
+                <thead>
+                    <tr>
+                    <th scope="row">Producto</th>
+                    <th scope="row">Precio</th>
+                    <th scope="row">Imagen</th>
+                    </tr>
+                </thead>
+                <tbody id="productos">
+                </tbody>
+        </table>
+</div>
+
+
+<div class="container">
+<h2>Centro de mensajes</h2>
+<form onsubmit="return addMessage(this)">
+        <input type="text" id="username" placeholder="Tu nombre" required>
+        <br>
+        <div id="messages"></div>
+        <input type="text" id="texto" placeholder="Deja tu mensaje!">
+        <input type="submit" value="Enviar">
+</form>
+</div>

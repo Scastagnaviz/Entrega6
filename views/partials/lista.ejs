@@ -1,0 +1,23 @@
+  <div id="productos">
+  <table class="table table-info table-striped" >
+            <thead>
+                <tr>
+                <th scope="row">Producto</th>
+                <th scope="row">Precio</th>
+                <th scope="row">Imagen</th>
+                </tr>
+            </thead>
+            
+           <tbody>     
+    <% productos.forEach(function(producto) { %>
+        <tr>   
+            <td><%= producto.nombre%></td>
+            <td><%= producto.precio%></td>
+            <td> <img src="<%= producto.url%>" alt="noImg"> </td> 
+        </tr>
+        
+             <% }); %>
+            </tbody>
+</table>
+
+</div>
